@@ -3,7 +3,16 @@ import { useLungContext } from "../../../store/context";
 import BouncyBalls from "./ball3d/bouncyBalls";
 
 const calculateBallCount = (lungBallCount: number) => {
-  return lungBallCount * 13;
+  if (lungBallCount < 25) {
+    return 30;
+  }
+  if (lungBallCount < 50) {
+    return 200;
+  }
+  if (lungBallCount < 75) {
+    return 600;
+  }
+  return 1200;
 };
 
 const LungVisual = memo(() => {
