@@ -2,7 +2,6 @@ import { Canvas } from "@react-three/fiber";
 import { Physics } from "@react-three/rapier";
 import { memo } from "react";
 import Balls from "./balls/balls";
-import Jar from "./jar/jar";
 import Ground from "./ground/ground";
 import Lung from "./lung/lung";
 import { OrbitControls } from "@react-three/drei";
